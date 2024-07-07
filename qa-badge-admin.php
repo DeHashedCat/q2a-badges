@@ -235,7 +235,7 @@ You may cancel these notices at any time by visiting your profile at the link ab
 					
 					$badge_name=qa_badge_name($slug);
 					if(!qa_opt('badge_'.$slug.'_name')) qa_opt('badge_'.$slug.'_name',$badge_name);
-					$name = qa_opt('badge_'.$slug.'_name');
+					$name = qa_html(qa_opt('badge_'.$slug.'_name'));
 
 					$badge_desc=qa_badge_desc_replace($slug,qa_opt('badge_'.$slug.'_var'),true);
 
